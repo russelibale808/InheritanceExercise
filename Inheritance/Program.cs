@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net.Http.Headers;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Inheritance
 {
@@ -29,11 +31,46 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            var Birds = new Birds();
+
+            Birds.CanFly = true;
+            Birds.HasBeak = true;
+            Birds.LaysEggs = true;
+            Birds.HasFeathers = true;
+
+            Birds.HasFourLegs = false;
+            Birds.DrinksWater = true;
+            Birds.IsFriendly = true;
+            Birds.Sound = "KahhhKAHHHH";
+
+            Birds.BirdStats();
+
+            Console.WriteLine();
+
+
+
+
+
+
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+
+            var Reptiles = new Reptile();
+
+            Reptiles.ColdBlooded = true;
+            Reptiles.HasBackBones = true;
+            Reptiles.HasScales = true;
+            Reptiles.BreathThroughLungs = true;
+
+            Reptiles.DrinksWater = true;
+            Reptiles.HasFourLegs = true;
+            Reptiles.IsFriendly = false;
+            Reptiles.Sound = "SSSSSsssssssSSSSS";
+
+            Reptiles.RepStats();
         }
     }
 }
